@@ -21,11 +21,22 @@ Tags: AUGM, OITA, 2014, Apple, User, Group, Meeting
     z-index: 1000;
 }
 
-#menu-navigation {
+#footer {
+	background-color: transparent;
+    height: 30px;
+    left: 0;
+    line-height: 30px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#page-nav {
 	text-align: right;
 }
 
-#menu-navigation li {
+#page-nav li {
 	display: inline;
 	margin-right: 30px;
 }
@@ -56,5 +67,4 @@ Tags: AUGM, OITA, 2014, Apple, User, Group, Meeting
 }
 
 #footer {
-  background-color: #421B60;
 }
