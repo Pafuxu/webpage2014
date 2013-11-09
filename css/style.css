@@ -10,8 +10,13 @@ Tags: AUGM, OITA, 2014, Apple, User, Group, Meeting
 
 ::-webkit-input-placeholder { color:#ccc; }
 
+.section.table { /* Bootstrap のスタイルを補正 */
+  margin-bottom: 0;
+}
+#masthead, #page-nav, #footer {
+ 	background-color: rgba(255, 255, 255, .5); 
+}
 #masthead {
-	background-color: transparent;
     height: 30px;
     left: 0;
     line-height: 30px;
@@ -22,7 +27,6 @@ Tags: AUGM, OITA, 2014, Apple, User, Group, Meeting
 }
 
 #footer {
-	background-color: transparent;
     height: 30px;
     left: 0;
     line-height: 30px;
@@ -62,8 +66,16 @@ Tags: AUGM, OITA, 2014, Apple, User, Group, Meeting
   background-color: #667459;
 }
 
-#other {
-  background-color: #00609A;
+#party {
+  background-color: #1b9af7;
+}
+
+#userGroup {
+  background-color: #7b72e9;
+}
+
+#support {
+  background-color: #ffd426;
 }
 
 #footer {
