@@ -22,32 +22,31 @@
     <meta property="og:description" content="大分県最大のアップルイベントが2014年2月15日（土）に開催されます">
     <meta property="og:url" content="http://augm.onsenringo.org/">
     <meta property="og:image" content="http://augm.onsenringo.org/images/siteicon.png">
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet" media="screen"><!-- Bootstrap -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/fullPage.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/toggleMenu.css" type="text/css" media="all">
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-    <script src="js/jquery.fullPage.min.js"></script>
-    <script src="js/jquery.slimscroll.min.js"></script>
-    <script>
-      $(document).ready(function() {
-          $.fn.fullpage({
-            anchors: ['homePage', 'summaryPage', 'guestPage', 'moviePage', 'partyPage', 'userGroupPage', 'supportPage'],
-            menu: '#page-nav',
-            navigation: true,
-            scrollOverflow: true
-          });
-      });
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/toggleMenu.css">
+    <style>
+    .ticker {
+    width: 600px;
+    height: 50px;
+    overflow: hidden;
+    margin: 60px 0 0 35px;
+    padding: 0;
+    list-style: none;
+    text-shadow: 0px 1px 1px #000;
+        font-size: 25px;
+    }
+    
+    .ticker li {
+    height: 60px;
+ 
+    padding: 5px;
+    margin: 0px 5px;
+    }
 
-	</script>
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+    </style>
   </head>
   <body id="topPage"  data-spy="scroll" data-offset="0" data-target="#theMenu">
   <header id="masthead" role="banner">
@@ -69,7 +68,7 @@
 		</div>
 		
 		<!-- Menu button -->
-		<div id="menuToggle"><i class="fa fa-bars fa-2x"></i></div>
+		<div id="menuToggle"><i class="fa fa-bars"></i></div>
 	</nav>
 
   </header>
@@ -78,6 +77,21 @@
       <h1>AUGM in OITA 2014</h1>
       <h2>みたいのは、Aの先。</h2>
       <p><time datetime="2014-02-15T12:30+09:00">2014年2月15日（土）</time></p>
+      <h3>最新情報</h3>
+      <ul id="news" class="ticker">
+          <li>
+              まもなく<br /> (via:<a href="http://skytechgeek.com/2011/10/free-top-10-productivity-apps-for-ipad-users/">skytechgeek.com</a>)
+          </li>
+                  <li>
+              はじまるよ！<br /> (via:<a href="http://machoarts.com/5-creative-design-blunders-in-branding">machoarts.com</a>)
+          </li>
+                  <li>
+              AUGM in OITA 2014<br /> (via:<a href="http://www.awwwards.com/amazing-eco-friendly-vehicles.html">awwwards</a>)
+          </li>
+                  <li>
+              待っててね<br /> (via:<a href="http://sixrevisions.com/css/using-css3-appropriately/">sixrevisions</a>)
+          </li>
+      </ul>
     </section><!-- 開催のお知らせ -->
     <section id="summary" class="section">
     <div itemscope itemtype="http://schema.org/Event">
@@ -196,7 +210,27 @@
   </footer>
   
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/jquery.slimscroll.min.js"></script>
+    <script>
+      $(document).ready(function() {
+          $.fn.fullpage({
+            anchors: ['homePage', 'summaryPage', 'guestPage', 'moviePage', 'partyPage', 'userGroupPage', 'supportPage'],
+            menu: '#page-nav',
+            navigation: true,
+            scrollOverflow: true
+          });
+          function ticker(){
+            if($('#news li').length<=1) return false;
+            $('#news li:first').slideUp( function() {
+            $(this).appendTo($('#news')).slideDown(); });
+          }
+            setInterval(function(){ticker()}, 5000);
+          });
+
+  	</script>
     <script src="js/main.js"></script>
 
   </body>
