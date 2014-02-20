@@ -4,15 +4,16 @@
     <meta charset="utf-8">
     <meta name="robots" content="noindex,nofollow">
     <meta http-equiv="pragma" content="no-cache">
-    <meta name="description" content="平成25年2月15日に行われる AUGM in OITA 2014 の事前参加登録申し込みを行うページです">
+    <meta name="description" content="平成26年2月15日に行われる AUGM in OITA 2014 の事前参加登録申し込みを行うページです">
     <title itemprop="name">事前参加登録 - AUGM in OITA 2014</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="auther" href="/about/">
     <link rel="canonical" href="http://augm.onsenringo.org/about/">
     <link rel="canonical" href="http://augm.onsenringo.org/../about/">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"><!-- Bootstrap -->
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <link rel="stylesheet" href="css/validetta.css">
+    <link rel="stylesheet" href="../asset/css/normalize.css">
+    <link rel="stylesheet" href="../asset/formcgi/mfp.statics/mailformpro.css">
+    <link rel="stylesheet" href="../asset/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/formstyle.css">
     <style>
       .fa-dot-circle-o {
         color: #f3a113;
@@ -27,8 +28,8 @@
     <![endif]-->
   </head>
   <body id="formPage">
-  <header role="banner" class="row">
-    <div class="col-sm-6 col-sm-offset-2">
+  <header role="banner" class="jumbotron">
+    <div class="container">
       <h1>AUGM in OITA 2014</h1>
       <p>平成26年2月15日に行われる AUGM in OITA 2014 の事前参加登録申し込みを行うページです。<small>（「<i class="fa fa-dot-circle-o"></i>」印は必須項目となります。）</small></p>
     </div>
@@ -36,77 +37,86 @@
   <main role="main" class="container">
     <section>
 
-    <form  id="entryForm" class="form-horizontal" role="form" action="" method="post">
+    <form id="mailformpro" action="../asset/formcgi/mailformpro/mailformpro.cgi">
     <fieldset>
     <legend>申込事項</legend>
       <div class="form-group">
-        <label for="inputname" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> お名前</label>
+        <label for="お名前" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> お名前</label>
         <div class="col-sm-6">
-          <input type="text" class="form-control" id="inputname" placeholder="大分  太郎" data-validetta="required">
+          <input type="text" class="form-control" name="お名前" data-kana="フリガナ" placeholder="大分太郎" required="required" value="">
         </div>
       </div>
       <div class="form-group">
-        <label for="inputkana" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> フリガナ</label>
+        <label for="フリガナ" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> フリガナ</label>
         <div class="col-sm-6">
-          <input type="text" class="form-control" id="inputkana" placeholder="オオイタ  タロウ" data-validetta="required">
+          <input type="text" class="form-control" name="フリガナ" data-kana="フリガナ" placeholder="オオイタタロウ" required="required" value="">
         </div>
       </div>
       <div class="form-group">
-        <label for="inputEmail3" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> メールアドレス</label>
+        <label for="email" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> メールアドレス</label>
         <div class="col-sm-6">
-          <input type="email" class="form-control" name="inputEmail3" id="inputEmail3" placeholder="oita@example.com" data-validetta="required, email">
+          <input type="email" class="form-control" name="email" data-type="email" data-type="mailfield" placeholder="oita@example.com" required="required">
         </div>
       </div>
       <div class="form-group">
-        <label for="inputEmail4" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> 再入力</label>
+        <label for="confirm_email" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> 確認のため再入力</label>
         <div class="col-sm-6">
-          <input type="email" class="form-control" name="inputEmail4" id="inputEmail4" placeholder="oita@example.com" data-validetta="equal[inputEmail3]">
+          <input type="email" class="form-control" name="confirm_email" data-type="email" data-type="mailfield" placeholder="oita@example.com" data-required="required">
         </div>
       </div>
       <div class="form-group">
-        <label for="userGroup" class="col-sm-2 control-label">所属グループ</label>
+        <label for="所属グループ" class="col-sm-2 control-label">所属グループ</label>
         <div class="col-sm-6">
-          <input type="text" class="form-control" id="userGroup" placeholder="所属するユーザーグループ名をご記入ください。無所属は空欄のまま。">
+          <input type="text" class="form-control" name="所属グループ" placeholder="所属するユーザーグループ名">
+        </div>
+        <div class="text-contents">
+        <p class="col-sm-4"><small>無所属の場合は空欄のままで結構です。</small></p>
         </div>
       </div>
       <div class="form-group">
-        <label for="handleName" class="col-sm-2 control-label">ハンドル名</label>
+        <label for="ハンドル名" class="col-sm-2 control-label">ハンドル名</label>
         <div class="col-sm-6">
-          <input type="text" class="form-control" id="handleName" placeholder="ネット上のニックネーム">
+          <input type="text" class="form-control" name="ハンドル名" placeholder="ネット上のニックネーム">
         </div>
+        <div class="text-contents">
         <p class="col-sm-4"><small>当日、名札にハンドル名が表示されます。未記入の場合、名札には「お名前」が表示されます。</small></p>
+        </div>
       </div>
       <div class="form-group">
-        <label for="party" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> 懇親会</label>
+        <label for="懇親会" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> 懇親会</label>
         <div class="col-sm-6">
           <label class="radio-inline">
-            <input type="radio" name="party" id="inlineradio1" value="参加" data-validetta="required"> 参加
+            <input type="radio" name="懇親会" value="参加"  required="required"> 参加
           </label>
           <label class="radio-inline">
-            <input type="radio" name="party" id="inlineradio2" value="不参加" data-validetta="required"> 不参加
+            <input type="radio" name="懇親会" value="不参加"  required="required"> 不参加
           </label>
+        <div class="mfp_err" id="errormsg_懇親会"></div>
         </div>
+        <div class="text-contents">
         <p class="col-sm-4"><small>参加される方は、会費5,000円を当日受付にてお支払いください。<br />未成年の方は参加できません。また、懇親会のみの参加はご遠慮ください。</small></p>
+        </div>
       </div>
     </fieldset>
     <fieldset>
     <legend>アンケート</legend>
       <div class="form-group">
-        <label for="sex" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> 性別</label>
+        <label for="性別" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> 性別</label>
         <div class="col-sm-6">
           <label class="radio-inline">
-            <input type="radio" name="sex" id="inlineradio3" value="男性" data-validetta="required"> 男性
+            <input type="radio" name="性別" value="男性"  required="required"> 男性
           </label>
           <label class="radio-inline">
-            <input type="radio" name="sex" id="inlineradio4" value="女性" data-validetta="required"> 女性
+            <input type="radio" name="性別" value="女性"  required="required"> 女性
           </label>
+        <div class="mfp_err" id="errormsg_性別"></div>
         </div>
       </div>
       <div class="form-group">
-        <label for="age" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> 年齢</label>
+        <label for="年齢" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> 年齢</label>
         <div class="col-sm-6">
-          <select id="age" name="age" class="form-control" data-validetta="required">
-            <option value="">年齢範囲を選択してください</option>
+          <select name="年齢" class="form-control"  required="required">
+            <option value="" disabled="disabled">年齢範囲を選択してください</option>
             <option value="10歳未満">10歳未満</option>
             <option value="10〜19歳">10〜19歳</option>
             <option value="20〜29歳">20〜29歳</option>
@@ -119,10 +129,10 @@
         </div>
       </div>
       <div class="form-group">
-        <label for="address" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> お住まい</label>
+        <label for="お住まい" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> お住まい</label>
         <div class="col-sm-6">
-          <select id="address" name="address" class="form-control" data-validetta="required">
-            <option value="">地域を選択してください</option>
+          <select name="お住まい" class="form-control"  required="required">
+            <option value="" disabled="disabled">地域を選択してください</option>
             <option value="大分市">大分市</option>
             <option value="別府市">別府市</option>
             <option value="中津市">中津市</option>
@@ -196,10 +206,10 @@
         </div>
       </div>
       <div class="form-group">
-        <label for="occupation" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> 職業</label>
+        <label for="職業" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> 職業</label>
         <div class="col-sm-6">
-          <select id="occupation" name="occupation" class="form-control" data-validetta="required">
-            <option value="">業種を選択してください</option>
+          <select name="職業" class="form-control"  required="required">
+            <option value="" disabled="disabled">業種を選択してください</option>
             <option value="IT関係">IT関係</option>
             <option value="事務系">事務系</option>
             <option value="技術系">技術系</option>
@@ -222,10 +232,10 @@
         </div>
       </div>
       <div class="form-group">
-        <label for="macYears" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> Mac歴</label>
+        <label for="Mac歴" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> Mac歴</label>
         <div class="col-sm-6">
-          <select id="macYears" name="macYears" class="form-control" data-validetta="required">
-              <option value="">使用期間を選択してください</option>
+          <select name="Mac歴" class="form-control"  required="required">
+              <option value="" disabled="disabled">使用期間を選択してください</option>
               <option value="使っていない">使っていない</option>
               <option value="1〜5年">1〜5年</option>
               <option value="5〜10年">5〜10年</option>
@@ -237,10 +247,11 @@
         </div>
       </div>
       <div class="form-group">
-        <label for="learn" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> AUGM大分を何で知りましたか？</label>
+        <label for="AUGM大分を何で知りましたか？" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> AUGM大分を何で知りましたか？</label>
+        <div>
         <div class="col-sm-6">
-          <select id="learn" name="learn" class="form-control" data-validetta="required">
-              <option value="">媒体を選択してください</option>
+          <select name="AUGM大分を何で知りましたか？" class="form-control" required="required">
+              <option value="" disabled="disabled">媒体を選択してください</option>
               <option value="ポスターを見て">ポスターを見て</option>
               <option value="友人・知人から">友人・知人から</option>
               <option value="AUGM in OITAのWebサイト">AUGM大分のサイト</option>
@@ -249,54 +260,57 @@
               <option value="その他Webサイト">その他Webサイト</option>
               <option value="その他">その他</option>
           </select>
-          <style scoped="scoped">
-            #learn {
-              margin-top: 1.6rem;
-            }
-          </style>
-          <input type="text" class="form-control" name="learn" id="learn" placeholder="その他の方は具体的に">
+          <div class="mfp_err" id="errormsg_AUGM大分を何で知りましたか？"></div>
+        </div>
+          <div>
+            <label for="その他" style="display:none">その他</label>
+            <input type="text" name="その他" class="form-control" placeholder="その他の方は具体的に" style="margin: 1rem 0;">
+          </div>
         </div>
       </div>
       <div class="form-group">
-        <label for="history" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> 参加履歴</label>
+        <label for="参加履歴" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> 参加履歴</label>
         <div class="col-sm-6">
-          <select id="history" name="history" class="form-control" data-validetta="required">
-            <option value="" />参加回数を選択してください</option>
-            <option value="1 回目" />今回で 1 回目</option>
-            <option value="2 回目" />今回で 2 回目</option>
-            <option value="3 回目" />今回で 3 回目</option>
-            <option value="4 回目" />今回で 4 回目</option>
-            <option value="5 回目" />今回で 5 回目</option>
-            <option value="6 回目" />今回で 6 回目</option>
-            <option value="7 回目" />今回で 7 回目</option>
-            <option value="8 回目" />今回で 8 回目</option>
+          <select name="参加履歴" class="form-control"  required="required">
+            <option value="" disabled="disabled">参加回数を選択してください</option>
+            <option value="1 回目">今回が 初参加</option>
+            <option value="2 回目">今回で 2 回目</option>
+            <option value="3 回目">今回で 3 回目</option>
+            <option value="4 回目">今回で 4 回目</option>
+            <option value="5 回目">今回で 5 回目</option>
+            <option value="6 回目">今回で 6 回目</option>
+            <option value="7 回目">今回で 7 回目</option>
+            <option value="8 回目">今回で 全参加</option>
             </select>
         </div>
       </div>
       <div class="form-group">
-        <label for="comments" class="col-sm-2 control-label">コメント</label>
+        <label for="コメント" class="col-sm-2 control-label">コメント</label>
         <div class="col-sm-6">
-              <textarea class="form-control" rows="3" name="comments" id="comments"></textarea>
+              <textarea class="form-control" rows="3" name="コメント"></textarea>
         </div>
       </div>
       <div class="form-group">
-        <label for="attention" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> お知らせ</label>
+        <label for="お知らせ" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> お知らせ</label>
         <div class="col-sm-6">
           <label class="radio-inline">
-            <input type="radio" name="attention" id="attention1" value="はい" data-validetta="required"> はい
+            <input type="radio" name="お知らせ" value="はい"  required="required"> はい
           </label>
           <label class="radio-inline">
-            <input type="radio" name="attention" id="attention2" value="いいえ" data-validetta="required"> いいえ
+            <input type="radio" name="お知らせ" value="いいえ"  required="required"> いいえ
           </label>
+        <div class="mfp_err" id="errormsg_お知らせ"></div>
         </div>
+        <div class="text-contents">
         <p class="col-sm-4"><small>次回以降のAUGM大分の開催をメールでお知らせしてもいいですか？（メールアドレスは、AUGM大分のお知らせ以外の目的に使用することはありません）</small></p>
+        </div>
     
       </div>
     </fieldset>
-      <div class="form-group">
+      <div id="button_field" class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
-          <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-          <button type="reset" class="btn btn-warning btn-lg">Reset</button>
+          <button type="reset" class="btn btn-warning btn-lg">リセット</button>
+          <button type="submit" class="btn btn-primary btn-lg">確認する</button>
         </div>
       </div>
     
@@ -307,17 +321,6 @@
   <footer role="contentinfo">
     <address itemprop="author" itemscope itemtype="http://schema.org/Organization">Author: <a href="/about/" itemprop="url"><span itemprop="name">AUGM大分2014実行委員会</span></a></address>
   </footer>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>    
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-    <script src="js/validetta-min.js"></script><script src="js/validettaLang-ja.js"></script>
-    <script>
-    $(document).ready(function() {
-      $("#entryForm").validetta({
-        realTime : true
-      });
-    });
-    </script>
+    <script src="../asset/formcgi/mailformpro/mailformpro.cgi" id="mfpjs"></script>
   </body>
 </html>

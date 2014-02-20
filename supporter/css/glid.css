@@ -1,0 +1,74 @@
+main {
+	max-width: 69em;
+	margin: 0 auto;
+	padding: 0 1.875em 3.125em 1.875em;
+  
+}
+.full-glid {
+	margin: 35px 0 0 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	width: 100%;
+	text-align: justify;
+	font-size: 0;
+}
+
+.full-glid:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+.full-glid li {
+	position: relative;
+	display: inline-block;
+	width: 33.3333333%;
+	font-size: 16px;
+	vertical-align: top;
+	padding: 5px 20px;
+  transition: background-color 250ms ease-in-out,
+              color 250ms ease-in-out;
+}
+
+.full-glid a {
+  color: #333;
+}
+
+.full-glid li:hover {
+  background-color: #4DBAAA;
+}
+
+.full-glid li:hover a {
+  color: white;
+}
+
+.full-glid li a div h3 {
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0;
+}
+
+.break {
+  width: 100%;
+  height: 0;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	.full-glid li {
+		width: 50%;
+  	padding: 10px;
+	}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+  main {
+  	padding: 0 .625em 3.125em .625em;
+    
+  }
+	.full-glid li {
+		width: 100%;
+  	padding: 10px;
+	}
+}
+

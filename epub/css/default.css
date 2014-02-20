@@ -1,0 +1,243 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+@font-face {
+  font-family:'mplus-1m-thin';
+  src: url('../fonts/mplus-1m-thin-sub.eot') format('eot');
+  src: url('../fonts/mplus-1m-thin-sub.woff') format('woff');
+  src: url('../fonts/mplus-1m-thin-sub.ttf') format('truetype');
+}
+
+.overlay a {
+  font-family: 'mplus-1m-thin';
+}
+
+body {
+	color: #333;
+  background-color: #fff;
+}
+body:before { /* top shadow */
+  content: "";
+  position: fixed;
+  top: -10px;
+  left: -10px;
+  width: 110%;
+  height: 10px;
+  
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+  -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+  -ms-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+  -o-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+  box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+  z-index: 100;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  background-color: #4DBAAA;
+  margin-top: 4em;
+  padding-bottom: 1px;
+  transition: all 250ms ease-in-out;
+}
+footer:hover {
+  background-color: #46a193;
+}
+footer a {
+  display: block;
+  width: 100%;
+  padding: 50px;
+  color: #c1fff6;
+  text-decoration: none !important;
+}
+
+footer:hover a {
+  color: #fff;
+}
+
+address {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container > *:not(header):not(footer) {
+  width: 70em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.col-2 {
+  display: table;
+}
+.col-2 > .column {
+  display: table-cell;
+  width: 50%;
+  vertical-align: top;
+  padding: 1em;
+}
+.column  .download {
+  text-align: center;
+}
+.column .download a {
+  display: inline-block;
+}
+.column .download a:first-child {
+  margin-bottom: 1em;
+}
+.page-top-nav {
+  position: relative;
+  padding: 2em 0;
+}
+.page-top-nav nav {
+  width: 100%;
+}
+.page-top-nav nav a {
+  display: inline-block;
+}
+.page-top-nav nav a img {
+  width: 120px;
+}
+.page-top-nav aside {
+  position: absolute;
+  top: 2em; right: 0;
+}
+.page-top-nav aside .button_menu {
+	display: block;
+	float: left;
+	position: relative;
+	width: 3.85714286em; height: 3.85714286em;
+	background: transparent;
+	border-radius: 50%;
+	color: transparent;
+	border: 4px solid #a1de81;
+  transition: all 250ms ease-in-out;
+}
+
+.page-top-nav aside .icon:before {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5em;
+  display: block;
+  position: absolute;
+  top: -1px; left: 0;
+  width: 100%;
+  color: #a1de81;
+}
+
+
+.page-top-nav aside .icon-plus:before {
+  content: "\f0fe";
+}
+
+
+.page-top-nav aside button:after {
+	content: attr(data-info);
+	color: #a1de81;
+	position: absolute;
+	width: 600%;
+	top: 120%;
+	text-align: right;
+	right: 0;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.page-top-nav aside button:hover:after {
+	opacity: 1;
+}
+
+.page-top-nav aside button:hover {
+	background: #a1de81;
+}
+
+.page-top-nav aside button:hover:before {
+	color: #fff;
+}
+.header {
+  display: block;
+  width: 100%; height: 500px;
+  background: url(../img/epub-ibooks-bg-blur.png) no-repeat center center;
+  background-size: 100% auto;
+  margin-bottom: 5em;
+}
+.header h1 {
+  width: 60%;
+  height: 100%;
+  background:  url(../img/epub-ibooks-ipad.png) no-repeat center bottom;
+  background-size: 100% auto;
+  margin: 0 auto;
+  padding: 0;
+  text-indent: -9999px;
+}
+.button-link {
+  padding: 10px 15px;
+  background: #4479BA;
+  color: #FFF;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: solid 1px #20538D;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+.button-link:hover {
+  background: #356094;
+  border: solid 1px #2A4E77;
+  text-decoration: none;
+  color: white;
+}
+.button-link:active {
+  -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+  background: #2E5481;
+  border: solid 1px #203E5F;
+  color: white;
+}
+.button-link:visited {color: white;}
+/* Media Queries for the layout */
+@media screen and (max-width: 68em) {
+}
+@media screen and (max-width: 54em) {
+.container > *:not(header):not(footer) {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.page-top-nav aside {
+  right: 10px;
+}
+.header {
+  height: 380px;
+}
+}
+@media screen and (max-width: 40.6em) {
+.header {
+  height: 280px;
+}
+h1.title {
+  font-size: 28px;
+  text-align: center;
+}
+}
+@media screen and (max-width: 34.3em) {
+.header {
+  height: 160px;
+}
+.col-2 > .column {
+  display: block;
+  width: 100%;
+}
+}

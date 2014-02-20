@@ -1,0 +1,763 @@
+html {
+  height: 100%;
+}
+body, html {
+  width: 100%;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #333;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased
+}
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.just {
+    text-align: justify
+}
+
+.just:after {
+    content: '';
+    display: inline-block;
+    width: 100%
+}
+
+.just>* {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left
+}
+
+.seo {
+    display: none !important
+}
+
+footer {
+  text-align: center;
+  padding: 50px;
+  background-color: #4DBAAA;
+  background-image: url(../img/title_bg.png);
+  color: white;
+}
+
+footer a:link, footer a:visited {
+  color: white;
+  text-decoration: none;
+}
+h1 {
+  font-family : YuGothic, '游ゴシック', sans-serif;
+}
+.header {
+  position: relative;
+  padding: 0 50px;
+  font-size: 0;
+  height: 110px;
+}
+
+.header nav {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.header .logo {
+  display: inline-block;
+  width: 150px;
+  height: 68px;
+  background: url(../img/logo_normal.svg) no-repeat center;
+  background-size: 100% auto;
+  text-indent: -9999px;
+  vertical-align: top;
+  margin: 20px 20px 0 0;
+}
+
+.header aside {
+  font-size: 0;
+  line-height: 1;
+  position: absolute;
+  top: 0;
+  right: 50px;
+}
+
+.header aside .btn, .header aside a.btn {
+    vertical-align: middle;
+    display: inline-block;
+    background: #d8dada;
+    font-size: 13px;
+    color: #555
+}
+
+.header aside .btn {
+  width: 60px;
+  height: 110px;
+  line-height: 110px;
+}
+
+.header aside .btn a {
+  background-color: grey;
+}
+
+.header .btn.tw {
+  background-position: center -45px;
+  background-image: url(../img/social_icon.svg);
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  
+}
+
+.header .btn.fb {
+  background-position: center 35px;
+  background-image: url(../img/social_icon.svg);
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  
+}
+.header .btn.tw, .mobile-social-link .btn.tw {
+  background-color: #3dacdd;
+}
+
+.header .btn.fb, .mobile-social-link .btn.fb {
+  background-color: #3d5b94;
+}
+.header .btn.fb:hover {
+  background-color: #324b78;
+}
+.header .btn.tw:hover {
+  background-color: #3c99c2;
+}
+
+/* タイトル */
+.wide {
+  display: block;
+  width: 100%;
+  position: relative;
+  padding: 50px;
+  text-align: center;
+}
+
+.content {
+  margin: 0;
+  padding-top: 0;
+}
+
+.event-title {
+  background-color: #4DBAAA;
+  background-image: url(../img/title_bg.png);
+}
+
+.title {
+  display: inline-block;
+  background-size: 100% auto;
+  text-indent: -9999px;
+  font-size: 0;
+  vertical-align: top;
+}
+
+.main.title {
+  width: 680px;
+  height: 85px;
+  background: url(../img/main_title.png) no-repeat center;
+  background-size: 100% auto;
+}
+
+.sub.title {
+  width: 400px;
+  height: 50px;
+  background: url(../img/sub_title.svg) no-repeat center;  
+  background-size: 100% auto;
+}
+/* イベント詳細 */
+.event-info {
+  display: table;
+  width: 100%;
+  position: relative;
+}
+
+.event-info > * {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.event-info header {
+  width: 40%;
+  vertical-align: middle;
+  text-align: center;
+  padding: 50px;
+  border-right: 1px solid #eee;
+}
+
+.event-info header h1 {
+  font-size: 36px;
+}
+.event-info header.poster h1 {
+  text-indent: -9999px;
+}
+.poster {
+  background: url(../img/character/poster2014.png) no-repeat center;
+  background-size: auto 90%;
+}
+.event-info .content {
+  padding: 60px;
+}
+
+.description {
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+
+.dl-list {
+  position: relative;
+  margin: 0;
+}
+
+.dl-list dt {
+  position: absolute;
+  font-weight: bold;
+}
+
+.dl-list dd {
+  margin-left: 2em;
+  margin-bottom: 2em;
+  padding-left: 2em;
+}
+
+.dl-list dd:last-child {
+  margin-bottom: 0;
+}
+
+.event-info  ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+/* リンクリスト */
+.link-list ul{
+  display:table;
+  table-layout: fixed;
+  width:100%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.link-list li{
+  display:table-cell;
+  position: relative;
+  background-color: #eee;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.link-list-item a {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  padding: 50px 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  background-position: center 20px;
+}
+
+.event-calender a {
+  background-color: #F8B63C;
+  background-image: url(../img/event_calendar_bg.svg);
+}
+
+.ibooks a {
+  background-color: #8CC66C;
+  background-image: url(../img/ibooks_bg.svg);
+}
+
+.event-movie a {
+  background-color: #6B9BD2;
+  background-image: url(../img/event_movie.svg);
+}
+.event-calender a:hover {
+  background-color: #dca141;
+}
+.ibooks a:hover {
+  background-color: #7bab61;
+}
+.event-movie a:hover {
+  background-color: #608ab8;
+}
+
+.event-supporter a {
+  background-color: #EC6D45;
+  background-image: url(../img/icon-list.svg);
+}
+
+.short-movie a {
+  background-color: #5E66AD;
+  background-image: url(../img/icon-image.svg);
+}
+
+.event-live a {
+  background-color: #CA66A3;
+  background-image: url(../img/icon-play.svg);
+}
+
+.event-supporter a:hover {
+  background-color: #d16243;
+}
+.short-movie a:hover {
+  background-color: #515991;
+}
+.event-live a:hover {
+  background-color: #ae5a8c;
+}
+
+/* 事前参加登録ボタン */
+a.btn.entry {
+  display: inline-block;
+  border: 3px solid #F08F5F;
+  padding: 10px 30px;
+  margin: 2rem 0 0 4rem;
+  border-radius: 6px;
+  text-decoration: none;
+  background-color: #EC6D45;
+  color: white;
+  font-weight: bold;
+}
+a.btn.entry:hover {
+  background-color: #d16143;
+  border-color: #D67D56;
+}
+.startApp {
+  margin-left: 1em;
+  font-size: 100%;
+}
+/* モバイル用ソシアルリンク */
+.mobile-social-link {
+  display: none;
+  width: 100%;
+  text-align: center;
+}
+.mobile-social-link > * {
+  display: table-cell;
+  width: 50%;
+}
+span .fa {
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+}
+.cn-button {
+  border: none;
+  background: none;
+  color: #f06060;
+  text-align: center;
+  font-size: 1.8em;
+  padding-bottom: 1em;
+  height: 3.5em;
+  width: 3.5em;
+  background-color: #fff;
+  position: fixed;
+  left: 50%;
+  margin-left: -1.75em;
+  bottom: -1.75em;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.cn-button:hover,
+.cn-button:active,
+.cn-button:focus {
+  color: #aa1010;
+}
+/* ゲスト一覧 */
+.guest-list {
+  font-size: 0;
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+}
+.guest-list a {
+  text-decoration: none;
+}
+a .guest-content {
+  color: #333;
+}
+.guest-list .detail .guest-image {
+  position: relative;
+}
+.guest-list .detail .guest-content {
+  position: relative;
+  padding: 40px 50px 50px;
+  background-color: #fff;
+  min-height: 250px;
+  height: auto !important;
+  height: 250px;
+}
+.guest-list .detail .guest-image img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.guest-list .detail .guest-image:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-bottom: 18px solid #fff;
+}
+.guest-list .detail .guest-content:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  height: 999px;
+  left: 0;
+  background-color: #fff;
+}
+
+.guest-list .detail:nth-of-type(even) .guest-image:after {
+  border-bottom-color: #f2f3f4;
+}
+.guest-list .detail:nth-of-type(even) .guest-content,
+.guest-list .detail:nth-of-type(even) .guest-content:after {
+  background-color: #f2f3f4;
+}
+.guest-list .detail:hover .guest-content,
+.guest-list .detail:hover .guest-content:after {
+  background-color: #60C18E;
+}
+.guest-list .detail:hover .guest-image:after {
+  border-bottom-color: #60C18E;
+}
+.guest-list h4 {
+  font-size: 18px;
+}
+.guest-list .guest-content p {
+  line-height: 1.7;
+  font-size: 15px;
+  margin-bottom: 1.4em;
+}
+.read-more {
+  font-size: 14px;
+  font-weight: 600;
+  color: #47c080;
+}
+a:hover .guest-content {
+  color: #fff;
+}
+a:hover .read-more {
+  color: #fff;
+}
+.guest-list .detail {
+  display: inline-block;
+  vertical-align: top;
+  width: 33.33%;
+  min-height: 100%;
+  background-color: fff;
+  transition: background-color 250ms ease-in-out,
+              color 250ms ease-in-out;
+}
+.guest-list .detail .guest-image {
+  padding-top: 40%;
+  background-color: #eee;
+}
+.guest-list .guest-image img {
+  width: 48px; height: 48px;
+}
+.adobe-bg {
+  background: url(../img/guest-bg/adobe-bg.png) no-repeat center;
+  background-size: auto 100%;
+}
+.trinity-bg {
+  background: url(../img/guest-bg/trinity-bg.png) no-repeat center;
+  background-size: auto 100%;
+}
+.focal-bg {
+  background: url(../img/guest-bg/focal-bg.png) no-repeat center;
+  background-size: auto 100%;
+}
+.cheero-bg {
+  background: url(../img/guest-bg/cheero.png) no-repeat center;
+  background-size: 100% auto;
+}
+.ks-bg {
+  background: url(../img/guest-bg/ks-bg.png) no-repeat center;
+  background-size: 100% auto;
+}
+.nobi-bg {
+  background: url(../img/guest-bg/nobi-bg.png) no-repeat center;
+  background-size: 100% auto;
+}
+.flick-bg {
+  background: url(../img/guest-bg/flick-bg.png) no-repeat center;
+  background-size: 100% auto;
+}
+.color-bg {
+  background: url(../img/guest-bg/color-bg.jpg) no-repeat center;
+  background-size: 100% auto;
+}
+.okita-bg {
+  background: url(../img/guest-bg/okita-bg.png) no-repeat center;
+  background-size: 100% auto;
+}
+.kanmonya-bg {
+  background: url(../img/guest-bg/kanmonya-bg.png) no-repeat center;
+  background-size: auto 100%;
+}
+.ibgm-bg {
+  background: url(../img/guest-bg/ibgm-bg.jpg) no-repeat center;
+  background-size: auto 100%;
+}
+.daq-bg {
+  background: url(../img/guest-bg/daq-bg.png) no-repeat center;
+  background-size: 100% auto;
+}
+
+a, a .content,a .guest-image,a .guest-image:after, a .guest-content,a .guest-content:after, a .guest-content .read-more {
+  transition: background-color 250ms ease-in-out,color 250ms ease-in-out,border 250ms ease-in-out,opacity 250ms ease-in-out;
+}
+/* 参加ユーザーグループ */
+.ug.wrap {
+  width: 100%;
+  padding: 50px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+  background: url(../img/character/ringochan.svg) no-repeat right bottom;
+  background-size: 30% auto;
+  background-color: #fffcdb;
+}
+.ug.wrap {
+  border-bottom: none;
+  border-top: 1px solid #eee;
+}
+.ug.wrap .content {
+  display:inline-block; text-align:left; margin-top:30px;
+}
+.ug.wrap .content {
+  text-align: center;
+}
+
+  .ug.list li * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .ug.list li {
+    max-height: 48px;
+    list-style-type: none;
+    margin-bottom: 1em;
+  }
+  .ug.list a {
+    display: block;
+    font-size: 36px;
+    text-decoration: none;
+    color: #555;
+    transition: all 150ms ease-in-out
+  }
+  .fa.fa-chevron-circle-right {
+    display: none !important;
+  }
+  .ug.list a:hover {
+    color: white;
+    background-color: #6fbdf9;
+  }
+  .ug.list a:hover .fa-chevron-circle-right {
+    color: #eee;
+    display: inline-block !important;
+    margin-left: 1em;
+  }
+  .ug > h1 {
+    margin: 0;
+    text-align: center;
+  }
+
+/* メディアクエリー */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+  .event-info header h1, 
+  .guest.list h1,
+  .ug.list h1,
+  .guest.list li a,
+  .ug.list li a {
+    font-size: 24px;
+  }
+
+}
+.soon:after {
+  display: inline-block;
+  position: absolute;
+  top: 0; left: 0;
+  content: "iBooksガイドブック (準備中)";
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 100%;
+  font-weight: bold;
+  text-align: center;
+  padding: 50px 0 0;
+  margin: 0;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+  .header aside {
+    position: relative;
+  }
+  .header aside .btn {
+    width: 50%;
+    height: auto;
+    line-height: 1;
+  }
+  .main.title {
+    width: 300px;
+    height: 37.5px;
+  }
+  
+  .sub.title {
+    width: 200px;
+    height: 25px;
+  }
+  .wide {
+    padding: 30px 0;
+  }
+  .social-link {
+    display: none;
+  }
+  .header {
+    padding: 0;
+    height: auto;
+  }
+  
+  .header nav {
+    display: block;
+    text-align: center;
+  }
+  
+  .header .logo {
+    margin: 20px 0;
+  }
+  .mobile-social-link {
+    display: table;
+  }
+  .event-info {
+    display: block;
+  }
+  
+  .event-info > * {
+    display: block;
+    width: 100%;
+  }
+  .event-info header {
+    width: 100%;
+    padding: 0;
+    border-right: none;
+    border-bottom: 1px solid #eee;
+  }
+  .event-info .content {
+    padding: 20px 10px;
+  }
+  footer {
+    padding: 20px 10px 30px;
+  }
+  .link-list ul{
+    display:block;
+    width:100%;
+  }
+  
+  .link-list li{
+    display:block;
+  }
+  
+  .link-list-item a {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+  }
+  .dl-list dd {
+    padding-left: 1em;
+    margin-bottom: 1em;
+  }
+  a.btn.entry {
+    display: inline-block;
+    margin-left: 0;
+  }
+  .entry-button {
+    width: 100%;
+    text-align: center;
+  }
+  .cn-button {
+    font-size: 1.2em;
+  }
+  .ug.wrap {
+    padding: 20px 10px 35%%;
+    background-position: center bottom;
+  }
+  .ug.wrap .content {
+    margin-top:20px;
+  }
+  .ug > h1 {
+    font-size: 1.8em;
+  }
+  .ug.list a {
+    font-size: 100%
+  }
+  .ug.wrap .content {
+    text-align: left;
+  }
+  .guest-list .detail {
+    width: 100%;
+  }
+  .startApp {
+    display: block;
+    margin-left: 0;
+    margin-top: 1em;
+  }
+  .guest-list .detail .guest-content {
+    padding: 20px 10px;
+    min-height: 200px;
+    height: auto !important;
+    height: 200px;
+  }
+  .guest-list .detail .guest-image:after {
+    border-bottom-color: #fce7ec !important;
+  }
+  .guest-list .detail .guest-content,
+  .guest-list .detail .guest-content:after {
+    background-color: #fce7ec !important;
+  }
+  a:hover .guest-content {
+    color: #333;
+  }
+  a:hover .read-more {
+    color: #47c080;
+  }
+  .poster {
+    background-size: 90% auto;
+    height: 400px;
+  }
+  .soon:after
+  {
+    display: inline-block;
+    position: absolute;
+    top: 0; left: 0;
+    content: "iBooksガイドブック (準備中)";
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 100%;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0 0;
+    margin: 0;
+  }
+}
+

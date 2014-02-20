@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex,nofollow">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta name="description" content="平成26年2月15日に行われる AUGM in OITA 2014 の事前参加登録申し込みを行うページです">
+    <title itemprop="name">事前参加登録 - AUGM in OITA 2014</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="auther" href="/about/">
+    <link rel="canonical" href="http://augm.onsenringo.org/about/">
+    <link rel="canonical" href="http://augm.onsenringo.org/../about/">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"><!-- Bootstrap -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="../formcgi/mfp.statics/mailformpro.css">
+    <style>
+      .fa-dot-circle-o {
+        color: #f3a113;
+      }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body id="stuff4formPage">
+  <header role="banner" class="jumbotron">
+    <div class="container">
+      <h1>AUGM in OITA 2014</h1>
+      <p>平成26年2月15日に行われる AUGM in OITA 2014 のお手伝いをしていただけるスタッフ登録申し込みを行うページです。<small>（「<i class="fa fa-dot-circle-o"></i>」印は必須項目となります。）</small></p>
+    </div>
+  </header>
+  <main role="main" class="container">
+    <section>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div id="mfp_phase_confirm" class="modal-body">
+      	<div id="mfp_phase_confirm_inner"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+    </section>
+    <section>
+    <form  id="mailformpro" class="form-horizontal" role="form" action="../formcgi/mailformpro/mailformpro.cgi" method="post">
+    <fieldset>
+    <legend>当日スタッフ登録</legend>
+      <div class="form-group">
+        <label for="inputname" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> お名前</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="inputname" placeholder="大分  太郎" data-format="$1 様" required="required">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputkana" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> フリガナ</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="inputkana" placeholder="オオイタ  タロウ" required="required">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> メールアドレス</label>
+        <div class="col-sm-6">
+          <input type="email" class="form-control" name="inputEmail3" id="inputEmail3" placeholder="oita@example.com" required="required" data-type="email" data-parent="mailfield">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputEmail4" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> 再入力</label>
+        <div class="col-sm-6">
+          <input type="email" class="form-control" name="inputEmail4" id="inputEmail4" placeholder="oita@example.com" required="required" data-type="email" data-parent="mailfield">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="handleName" class="col-sm-2 control-label">ハンドル名</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="handleName" placeholder="ネット上のニックネーム">
+        </div>
+        <p class="col-sm-4"><small>当日、スタッフ用名札に表示されるハンドル名です。</small></p>
+      </div>
+    </fieldset>
+    <fieldset>
+    <legend>参加状況</legend>
+      <div class="form-group">
+        <label for="preDay" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> 前日準備</label>
+        <div class="col-sm-6">
+          <label class="radio-inline">
+            <input type="radio" name="preDay" value="参加" required="required"> 参加
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="preDay" value="不参加" required="required"> 不参加
+          </label>
+        </div>
+      </div>
+       <div class="form-group">
+        <label for="preParty" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> 前夜祭</label>
+        <div class="col-sm-6">
+          <label class="radio-inline">
+            <input type="radio" name="preParty" id="inlineradio3" value="参加" required="required"> 参加
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="preParty" id="inlineradio4" value="不参加" required="required"> 不参加
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="clock" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> 当日来場予定時刻</label>
+        <div class="col-sm-6">
+          <select id="clock" name="clock" class="form-control" required="required">
+            <option value="">予定時刻を選択してください</option>
+            <option value="8:30">8:30</option>
+            <option value="9:00">9:00</option>
+            <option value="9:30">9:30</option>
+            <option value="10:00">10:00</option>
+            <option value="10:30">10:30</option>
+            <option value="11:00">11:00</option>
+          </select>
+        </div>
+      </div>
+       <div class="form-group">
+        <label for="bento" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> お弁当</label>
+        <div class="col-sm-6">
+          <label class="radio-inline">
+            <input type="radio" name="bento" id="inlineradio5" value="必要" required="required"> 必要
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="bento" id="inlineradio6" value="不要" required="required"> 不要
+          </label>
+        </div>
+        <p class="col-sm-4"><small>お弁当代500円となります。</small></p>
+      </div>
+      <div class="form-group">
+        <label for="party" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> 懇親会（二次会）</label>
+        <div class="col-sm-6">
+          <label class="radio-inline">
+            <input type="radio" name="party" id="inlineradio1" value="参加" required="required"> 参加
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="party" id="inlineradio2" value="不参加" required="required"> 不参加
+          </label>
+        </div>
+        <p class="col-sm-4"><small>参加される方は、会費5,000円を当日受付にてお支払いください。</small></p>
+      </div>
+      <div class="form-group">
+        <label for="comments" class="col-sm-2 control-label">コメント</label>
+        <div class="col-sm-6">
+              <textarea class="form-control" rows="3" name="comments" id="comments"></textarea>
+        </div>
+      </div>
+    </fieldset>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="reset" class="btn btn-warning btn-lg">Reset</button>
+          <button type="submit" id="mfpjs" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Confirm</button>
+        </div>
+      </div>
+    
+    </form>
+    </section>
+
+  </main>
+  <footer role="contentinfo">
+    <address itemprop="author" itemscope itemtype="http://schema.org/Organization">Author: <a href="/about/" itemprop="url"><span itemprop="name">AUGM大分2014実行委員会</span></a></address>
+  </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="../formcgi/mailformpro/mailformpro.cgi"></script>
+    <script>
+      /* $('#myModal').modal('toggle') */
+    </script>
+  </body>
+</html>

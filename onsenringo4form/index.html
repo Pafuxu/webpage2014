@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex,nofollow">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta name="description" content="平成26年2月15日に行われる AUGM in OITA 2014 の事前参加（温泉りんご専用）登録申し込みを行うページです">
+    <title itemprop="name">事前参加登録（温泉りんご専用） - AUGM in OITA 2014</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="auther" href="/about/">
+    <link rel="canonical" href="http://augm.onsenringo.org/about/">
+    <link rel="canonical" href="http://augm.onsenringo.org/../about/">
+    <link rel="stylesheet" href="../asset/css/normalize.css">
+    <link rel="stylesheet" href="../asset/formcgi/mfp.statics/mailformpro.css">
+    <link rel="stylesheet" href="../asset/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/formstyle.css">
+    <style>
+      .fa-dot-circle-o {
+        color: #f3a113;
+      }
+      #mfp_warning {
+        display: none !important;
+      }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body id="formPage">
+  <header role="banner" class="jumbotron">
+    <div class="container">
+      <h1>AUGM in OITA 2014</h1>
+      <h2>温泉りんご優先受付</h2>
+      <p><strong>このページからの登録について</strong><br>このページは、OITA Apple User Group「温泉りんご」メンバー専用の優先登録ページです。
+温泉りんごメンバーと確認できない場合、登録は無効となります。
+このフォームからの申し込みは、2014年1月26日19時59分をもって終了します。<small>（「<i class="fa fa-dot-circle-o"></i>」印は必須項目となります。）</small></p>
+    </div>
+  </header>
+  <main role="main" class="container">
+    <section>
+
+    <form id="mailformpro" action="../asset/formcgi/mailformpro/mailformpro.cgi">
+    <fieldset>
+    <legend>申込事項</legend>
+      <div class="form-group">
+        <label for="お名前" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> お名前</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" name="お名前" data-kana="フリガナ" placeholder="大分太郎" required="required">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="フリガナ" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> フリガナ</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" name="フリガナ" data-kana="フリガナ" placeholder="オオイタタロウ" required="required">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> メールアドレス</label>
+        <div class="col-sm-6">
+          <input type="email" class="form-control" name="email" data-type="email" data-type="mailfield" placeholder="oita@example.com" required="required">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="confirm_email" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> 確認のため再入力</label>
+        <div class="col-sm-6">
+          <input type="email" class="form-control" name="confirm_email" data-type="email" data-type="mailfield" placeholder="oita@example.com" data-required="required">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="所属グループ" class="col-sm-2 control-label">所属グループ</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control placeholder_color" name="所属グループ" placeholder="温泉りんご" value="温泉りんご" style="cursor: not-allowed;background-color: #eee;" readonly="readonly">
+        </div>
+        <div class="text-contents">
+        <p class="col-sm-4"><small>温泉りんごメンバーと確認できない場合、登録は無効となります。</small></p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="ハンドル名" class="col-sm-2 control-label">ハンドル名</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" name="ハンドル名" placeholder="ネット上のニックネーム">
+        </div>
+        <div class="text-contents">
+        <p class="col-sm-4"><small>当日、名札にハンドル名が表示されます。温泉りんごで使用しているものをお書きください。</small></p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="懇親会" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> 懇親会</label>
+        <div class="col-sm-6">
+          <label class="radio-inline">
+            <input type="radio" name="懇親会" value="参加"  required="required"> 参加
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="懇親会" value="不参加"  required="required"> 不参加
+          </label>
+        <div class="mfp_err" id="errormsg_懇親会"></div>
+        </div>
+        <div class="text-contents">
+        <p class="col-sm-4"><small>参加される方は、会費5,000円を当日受付にてお支払いください。<br />未成年の方は参加できません。また、懇親会のみの参加はご遠慮ください。</small></p>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset>
+    <legend>アンケート</legend>
+      <div class="form-group">
+        <label for="性別" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> 性別</label>
+        <div class="col-sm-6">
+          <label class="radio-inline">
+            <input type="radio" name="性別" value="男性"  required="required"> 男性
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="性別" value="女性"  required="required"> 女性
+          </label>
+        <div class="mfp_err" id="errormsg_性別"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="年齢" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> 年齢</label>
+        <div class="col-sm-6">
+          <select name="年齢" class="form-control"  required="required">
+            <option value="" disabled="disabled">年齢範囲を選択してください</option>
+            <option value="10歳未満">10歳未満</option>
+            <option value="10〜19歳">10〜19歳</option>
+            <option value="20〜29歳">20〜29歳</option>
+            <option value="30〜39歳">30〜39歳</option>
+            <option value="40〜49歳">40〜49歳</option>
+            <option value="50〜59歳">50〜59歳</option>
+            <option value="60〜69歳">60〜69歳</option>
+            <option value="70歳以上">70歳以上</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="お住まい" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> お住まい</label>
+        <div class="col-sm-6">
+          <select name="お住まい" class="form-control"  required="required">
+            <option value="" disabled="disabled">地域を選択してください</option>
+            <option value="大分市">大分市</option>
+            <option value="別府市">別府市</option>
+            <option value="中津市">中津市</option>
+            <option value="日田市">日田市</option>
+            <option value="佐伯市">佐伯市</option>
+            <option value="臼杵市">臼杵市</option>
+            <option value="津久見市">津久見市</option>
+            <option value="竹田市">竹田市</option>
+            <option value="豊後高田市">豊後高田市</option>
+            <option value="杵築市">杵築市</option>
+            <option value="宇佐市">宇佐市</option>
+            <option value="豊後大野市">豊後大野市</option>
+            <option value="由布市">由布市</option>
+            <option value="国東市">国東市</option>
+            <option value="姫島村">姫島村</option>
+            <option value="日出町">日出町</option>
+            <option value="九重町">九重町</option>
+            <option value="玖珠町">玖珠町</option>
+            <option value="-">----------</option>
+            <option value="福岡県">福岡県</option>
+            <option value="佐賀県">佐賀県</option>
+            <option value="長崎県">長崎県</option>
+            <option value="熊本県">熊本県</option>
+            <option value="宮崎県">宮崎県</option>
+            <option value="鹿児島県">鹿児島県</option>
+            <option value="沖縄県">沖縄県</option>
+            <option value="-">----------</option>
+            <option value="北海道">北海道</option>
+            <option value="青森県">青森県</option>
+            <option value="岩手県">岩手県</option>
+            <option value="宮城県">宮城県</option>
+            <option value="秋田県">秋田県</option>
+            <option value="山形県">山形県</option>
+            <option value="福島県">福島県</option>
+            <option value="茨城県">茨城県</option>
+            <option value="栃木県">栃木県</option>
+            <option value="群馬県">群馬県</option>
+            <option value="埼玉県">埼玉県</option>
+            <option value="千葉県">千葉県</option>
+            <option value="東京都">東京都</option>
+            <option value="神奈川県">神奈川県</option>
+            <option value="新潟県">新潟県</option>
+            <option value="富山県">富山県</option>
+            <option value="石川県">石川県</option>
+            <option value="福井県">福井県</option>
+            <option value="山梨県">山梨県</option>
+            <option value="長野県">長野県</option>
+            <option value="岐阜県">岐阜県</option>
+            <option value="静岡県">静岡県</option>
+            <option value="愛知県">愛知県</option>
+            <option value="滋賀県">滋賀県</option>
+            <option value="三重県">三重県</option>
+            <option value="京都府">京都府</option>
+            <option value="大阪府">大阪府</option>
+            <option value="兵庫県">兵庫県</option>
+            <option value="奈良県">奈良県</option>
+            <option value="和歌山県">和歌山県</option>
+            <option value="鳥取県">鳥取県</option>
+            <option value="島根県">島根県</option>
+            <option value="岡山県">岡山県</option>
+            <option value="広島県">広島県</option>
+            <option value="山口県">山口県</option>
+            <option value="徳島県">徳島県</option>
+            <option value="香川県">香川県</option>
+            <option value="愛媛県">愛媛県</option>
+            <option value="高知県">高知県</option>
+            <option value="-">----------</option>
+            <option value="海外">海外</option>
+            <option value="その他">その他</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="職業" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> 職業</label>
+        <div class="col-sm-6">
+          <select name="職業" class="form-control"  required="required">
+            <option value="" disabled="disabled">業種を選択してください</option>
+            <option value="IT関係">IT関係</option>
+            <option value="事務系">事務系</option>
+            <option value="技術系">技術系</option>
+            <option value="営業・企画系">営業・企画系</option>
+            <option value="クリエーター系">クリエーター系</option>
+            <option value="販売系">販売系</option>
+            <option value="サービス業">サービス業</option>
+            <option value="出版・印刷系">出版・印刷系</option>
+            <option value="役員・管理職">役員・管理職</option>
+            <option value="専門職">専門職</option>
+            <option value="公務員">公務員</option>
+            <option value="教員">教員</option>
+            <option value="自営業">自営業</option>
+            <option value="アーティスト">アーティスト</option>
+            <option value="フリーター">フリーター</option>
+            <option value="学生">学生</option>
+            <option value="主婦">主婦</option>
+            <option value="その他">その他</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="Mac歴" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> Mac歴</label>
+        <div class="col-sm-6">
+          <select name="Mac歴" class="form-control"  required="required">
+              <option value="" disabled="disabled">使用期間を選択してください</option>
+              <option value="使っていない">使っていない</option>
+              <option value="1〜5年">1〜5年</option>
+              <option value="5〜10年">5〜10年</option>
+              <option value="10〜15年">10〜15年</option>
+              <option value="15〜20年">15〜20年</option>
+              <option value="20〜25年">20〜25年</option>
+              <option value="25年以上">25年以上</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="AUGM大分を何で知りましたか？" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> AUGM大分を何で知りましたか？</label>
+        <div>
+        <div class="col-sm-6">
+          <select name="AUGM大分を何で知りましたか？" class="form-control"  required="required">
+              <option value="" disabled="disabled">媒体を選択してください</option>
+              <option value="ポスターを見て">ポスターを見て</option>
+              <option value="温泉りんごメーリングリスト">温泉りんごメーリングリスト</option>
+              <option value="友人・知人から">友人・知人から</option>
+              <option value="AUGM in OITAのWebサイト">AUGM大分のサイト</option>
+              <option value="Twitter">Twitter</option>
+              <option value="Facebook">Facebook</option>
+              <option value="その他Webサイト">その他Webサイト</option>
+              <option value="その他">その他</option>
+          </select>
+          <div class="mfp_err" id="errormsg_AUGM大分を何で知りましたか？"></div>
+        </div>
+          <div>
+            <label for="その他" style="display:none">その他</label>
+            <input type="text" name="その他" class="form-control" placeholder="その他の方は具体的に" style="margin: 1rem 0;">
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="参加履歴" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> 参加履歴</label>
+        <div class="col-sm-6">
+          <select name="参加履歴" class="form-control"  required="required">
+            <option value="" disabled="disabled">参加回数を選択してください</option>
+            <option value="1 回目">今回が 初参加</option>
+            <option value="2 回目">今回で 2 回目</option>
+            <option value="3 回目">今回で 3 回目</option>
+            <option value="4 回目">今回で 4 回目</option>
+            <option value="5 回目">今回で 5 回目</option>
+            <option value="6 回目">今回で 6 回目</option>
+            <option value="7 回目">今回で 7 回目</option>
+            <option value="8 回目">今回で 全参加</option>
+            </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="コメント" class="col-sm-2 control-label">コメント</label>
+        <div class="col-sm-6">
+              <textarea class="form-control" rows="3" name="コメント"></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="お知らせ" class="col-sm-2 control-label"><i class="fa fa-dot-circle-o"></i> お知らせ</label>
+        <div class="col-sm-6">
+          <label class="radio-inline">
+            <input type="radio" name="お知らせ" value="はい"  required="required"> はい
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="お知らせ" value="いいえ"  required="required"> いいえ
+          </label>
+        <div class="mfp_err" id="errormsg_お知らせ"></div>
+        </div>
+        <div class="text-contents">
+        <p class="col-sm-4"><small>次回以降のAUGM大分の開催をメールでお知らせしてもいいですか？（メールアドレスは、AUGM大分のお知らせ以外の目的に使用することはありません）</small></p>
+        </div>
+    
+      </div>
+    </fieldset>
+      <div id="button_field" class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="reset" class="btn btn-warning btn-lg">リセット</button>
+          <button type="submit" class="btn btn-primary btn-lg">確認する</button>
+        </div>
+      </div>
+    
+    </form>
+    </section>
+
+  </main>
+  <footer role="contentinfo">
+    <address itemprop="author" itemscope itemtype="http://schema.org/Organization">Author: <a href="/about/" itemprop="url"><span itemprop="name">AUGM大分2014実行委員会</span></a></address>
+  </footer>
+    <script src="../asset/formcgi/mailformpro/mailformpro.cgi" id="mfpjs"></script>
+  </body>
+</html>

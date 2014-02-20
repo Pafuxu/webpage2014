@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>short movie title and nav link</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <!-- Font Awesome BootstrapCDN -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="js/link.effect.js"></script>
+<style>
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+body {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	color: #b3b9bf;
+  background-color: #5E66AD;
+}
+
+a {
+	color: #ccc;
+	text-decoration: none !important;
+}
+
+.head-title {
+  min-width: 1020px;
+}
+
+.col-2 {
+  display: table;
+  width: 100%;
+}
+
+.col-2 .column {
+  display: table-cell;
+  position: relative;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+
+.title h1 {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	font-weight: 100;
+	font-size: 80px;
+	text-align: right;
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+	margin-bottom: .5em;
+	color: #fff;
+}
+
+.title p {
+  width: 80%;
+  float: right;
+  text-align: right;
+  color: rgba(256,256,256,.3);
+}
+
+.title span.block {
+  display: inline-block;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: ;
+  text-align: right;
+  position: absolute;
+  top: 0; right: 0;
+  font-weight: 100;
+}
+
+.title h1 span.text-color,
+.text-color {
+  color: #F08F5F;
+}
+
+.hi-icon-wrap {
+	text-align: center;
+	margin: 0 auto;
+	padding: 2em 0 3em;
+}
+
+.hi-icon {
+	display: inline-block;
+	font-size: 0px;
+	cursor: pointer;
+	margin: 15px 30px;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	color: #fff;
+}
+
+.hi-icon:after {
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	content: '';
+	-webkit-box-sizing: content-box; 
+	-moz-box-sizing: content-box; 
+	box-sizing: content-box;
+}
+
+.hi-icon:before {
+	font-family: 'Fontawesome';
+	speak: none;
+	font-size: 48px;
+	line-height: 90px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	display: block;
+	-webkit-font-smoothing: antialiased;
+}
+
+.hi-icon-home:before {
+	content: "\f015";
+}
+
+.hi-icon-about:before {
+	content: "\f05a";
+}
+
+/* Effect 1 */
+.hi-icon-effect-1 .hi-icon {
+	background: rgba(255,255,255,0.1);
+	-webkit-transition: background 0.2s, color 0.2s;
+	-moz-transition: background 0.2s, color 0.2s;
+	transition: background 0.2s, color 0.2s;
+}
+
+.hi-icon-effect-1 .hi-icon:after {
+	top: -7px;
+	left: -7px;
+	padding: 7px;
+	box-shadow: 0 0 0 4px #fff;
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+	-webkit-transform: scale(.8);
+	-moz-transition: -moz-transform 0.2s, opacity 0.2s;
+	-moz-transform: scale(.8);
+	-ms-transform: scale(.8);
+	transition: transform 0.2s, opacity 0.2s;
+	transform: scale(.8);
+	opacity: 0;
+}
+
+/* Effect 1a */
+.no-touch .hi-icon-effect-1a .hi-icon:hover {
+	background: rgba(255,255,255,1);
+	color: #5E66AD;
+}
+
+.no-touch .hi-icon-effect-1a .hi-icon:hover:after {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+
+nav {
+  position: relative;
+}
+
+.icon-nav:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%; margin-left: -150px;
+  width: 300px;
+  height: 300px;
+  background-image: url(../asset/img/character/naba.svg);
+  background-size: 100% auto;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.1);
+  background-position: 30px center;
+  background-repeat: no-repeat;
+}
+/* iPhone [portrait + landscape] */
+@media only screen and (max-device-width: 480px) {
+.head-title {
+  max-width: 480px;
+  min-width: 100%;
+}
+  .col-2 .column {
+    display: block;
+    width: 100%;
+  }
+.title span.block {
+  text-align: center;
+  position: static;
+  top: 0; right: 0;
+}
+.title h1 {
+  width: 90%;
+	font-size: 56px;
+	text-align: center;
+	margin-bottom: .5em;
+	color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.title p {
+  width: 90%;
+  float: none;
+  text-align: left;
+  margin: 0 auto;
+}
+
+
+
+}
+</style>
+  </head>
+  <body>
+    <div class="col-2 head-title" style="margin-top: 3em;padding-bottom:3em;">
+      <div class="column title clearfix">
+        <span class="block text-color">Kyushu Okinawa</span>
+        <h1>User Group Short Movie Festival <span class="text-color">2014</span></h1>
+        <p>九州沖縄の各ユーザーグループが制作したショートムービー作品を持ち寄って上映します。各賞が審査員によって授与されます。</p>
+      </div>
+      <div class="column navigation">
+<style scoped>
+</style>
+        <nav>
+          <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a icon-nav">
+            <a href="/" class="hi-icon hi-icon-home" data-info="ホームへ戻る">home</a>
+            <a href="/about/" class="hi-icon hi-icon-about" data-info="AUGM について">about</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

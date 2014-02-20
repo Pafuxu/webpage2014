@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja" itemscope itemtype="http://schema.org/ContactPage">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="AUGM in OITA 2014 についてのお問い合わせフォームです。">
+    <title itemprop="name">お問い合わせ - AUGM in OITA 2014</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="auther" href="/about/">
+    <link rel="canonical" href="http://augm.onsenringo.org/about/">
+    <link rel="canonical" href="http://augm.onsenringo.org/../about/">
+    <meta itemprop="description" content="AUGM in OITA 2014 についてのお問い合わせフォームです。">
+    <meta itemprop="image" content="http://augm.onsenringo.org/contact/images/contact-site-icon.png">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@augmoita">
+    <meta name="twitter:creator" content="@augmoita">
+    <meta name="twitter:domain" content="augm.onsenringo.org">
+    
+    <!-- Open Graph protocol (OGP) -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:site_name" content="お問い合わせ - AUGM in OITA 2014">
+    <meta property="og:title" content="AUGM in OITA 2014 について">
+    <meta property="og:description" content="AUGM in OITA 2014 についてのお問い合わせフォームです。">
+    <meta property="og:url" content="http://augm.onsenringo.org/contact/">
+    <meta property="og:image" content="http://augm.onsenringo.org/contact/images/contact-site-icon.png">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <!-- MailForm Pro CSS -->
+    <link rel="stylesheet" href="./mailform/mfp.statics/mailformpro.css">
+    <link rel="stylesheet" href="css/default.css">
+		<link rel="stylesheet" type="text/css" href="css/overlay.css" />
+  		<script src="js/modernizr.custom.js"></script>
+
+
+    <style>
+    </style>
+
+  </head>
+  <body>
+  <div class="container">
+<!-- タイトルと説明 -->
+    <header class="row clearfix">
+    <h1>お問い合わせ <small>AUGM in OITA 2014</small></h1>
+    <nav><button id="trigger-overlay" class="button_menu icon icon-plus" type="button" data-info="メニューを表示">menu</button></nav>
+    </header>
+    <p>当イベントに関する「お問い合わせ」または「キャンセル待ち予約」を行っていただくフォームページになります。すべての項目が必須項目となりますのでご記入いただき送信ボタンを押してください。なお、お返事は随時させていただいておりますが、お時間をいただくこともございますのでご了承ください。</p>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="mfp.cancel()">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">確認画面</h4>
+      </div>
+      <div class="modal-body">
+        <div id="mfp_phase_confirm" style="display: none;">
+          <div id="mfp_phase_confirm_inner"></div>
+        </div>
+        <p>入力内容に誤りがあるか不足しています。</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="mfp.cancel()">やり直す</button>
+        <button type="button" class="btn btn-primary" onclick="mfp.sendmail()">送信する</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- メールフォーム本体 -->
+      <form id="mailformpro" class="form-horizontal" role="form" action="mailform/mailformpro/mailformpro.cgi">
+      <div class="row">
+        <fieldset>
+        <legend>入力内容</legend>
+<!-- お名前の入力 -->
+          <div class="form-group">
+            <label for="お名前" class="col-sm-3 col-md-3 control-label">お名前</label>
+            <div class="col-sm-9 col-md-9">
+              <div class="input-group margin-bottom-sm">
+                <span class="input-group-addon"><i class="fa fa-pencil-square-o fa-fw"></i></span>
+                <input type="text" class="form-control dummy" name="お名前" data-kana="フリガナ" placeholder="大分太郎" required="required">
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-offset-3 col-sm-9 col-xs-offset-0 col-xs-12">
+             <div id="errormsg_お名前" class="mfp_err bg-danger icon warning"></div>
+          </div>
+<!-- フリガナかの入力 -->
+          <div class="form-group">
+            <label for="フリガナ" class="col-sm-3 control-label">フリガナ</label>
+            <div class="col-sm-9">
+              <div class="input-group margin-bottom-sm">
+                <span class="input-group-addon"><i class="fa fa-pencil-square-o fa-fw"></i></span>
+                <input type="text" class="form-control dummy" name="フリガナ" data-kana="フリガナ" placeholder="オオイタタロウ" required="required">
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-offset-3 col-sm-9 col-xs-offset-0 col-xs-12">
+             <div id="errormsg_フリガナ" class="mfp_err bg-danger icon warning"></div>
+          </div>
+<!-- メールアドレスの入力 -->
+          <div class="form-group">
+            <label for="email" class="col-sm-3 control-label">メールアドレス</label>
+            <div class="col-sm-9">
+              <div class="input-group margin-bottom-sm">
+                <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+                <input type="email" class="form-control dummy" name="email" data-type="email" data-type="mailfield" placeholder="oita@example.com" required="required">
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-offset-3 col-sm-9 col-xs-offset-0 col-xs-12">
+            <div id="errormsg_email" class="mfp_err bg-danger icon warning"></div>
+          </div>
+<!-- 確認用メールアドレスの入力 -->
+          <div class="form-group">
+            <label for="confirm_email" class="col-sm-3 control-label">確認のため再入力</label>
+            <div class="col-sm-9">
+              <div class="input-group margin-bottom-sm">
+                <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+                <input type="email" class="form-control dummy" name="confirm_email" data-type="email" data-type="mailfield" placeholder="oita@example.com" required="required">
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-offset-3 col-sm-9 col-xs-offset-0 col-xs-12">
+            <div id="errormsg_confirm_email" class="mfp_err bg-danger icon warning"></div>
+          </div>
+<!-- コメントの入力 -->
+          <div class="form-group">
+            <label for="コメント" class="col-sm-3 control-label">コメント</label>
+            <div class="col-sm-9">
+                  <textarea class="form-control dummy" rows="3" name="コメント" required="required" style="width: 100% !important; height: auto !important;"></textarea>
+            </div>
+          </div>
+          <div class="col-sm-offset-3 col-sm-9 col-xs-offset-0 col-xs-12">
+             <div id="errormsg_コメント" class="mfp_err bg-danger icon warning"></div>
+          </div>
+        </fieldset>
+<!-- ボタン類 -->
+        <div class="form-group centered">
+            <div class="btn-group btn-group-lg">
+              <button type="reset" class=" btn btn-warning">リセット</button>
+              <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#myModal">確認する</button>
+            </div>
+        </div>
+      </div>
+      </form>
+
+  </div><!-- /container -->
+		<!-- open/close -->
+		<div class="overlay overlay-slidedown">
+			<button type="button" class="overlay-close">Close</button>
+			<nav>
+				<ul>
+					<li><a href="/">ホーム</a></li>
+					<li><a href="/supporter/">協賛および後援</a></li>
+					<li><a href="/short-movie/">ショートムービー</a></li>
+					<li><a href="/about/index.html#photoReport">フォトレポート</a></li>
+					<li><a href="/about/">AUGM とは？</a></li>
+				</ul>
+			</nav>
+		</div>
+		<script src="js/classie.js"></script>
+		<script src="js/overlay.js"></script>
+
+  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <!-- MailForm Pro CGI -->
+    <script src="./mailform/mailformpro/mailformpro.cgi" id="mfpjs"></script>
+    
+  </body>
+</html>
