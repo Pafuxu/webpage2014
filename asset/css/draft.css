@@ -178,6 +178,7 @@ h1 {
   display: table;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .event-info > * {
@@ -578,6 +579,49 @@ a, a .content,a .guest-image,a .guest-image:after, a .guest-content,a .guest-con
     text-align: center;
   }
 
+/* メッセージ */
+.msg-wrap {
+  display: block;
+  background-color: #EC6D45;
+  overflow: hidden;
+  white-space: nowrap;
+  /* top left corner */
+  position: absolute;
+  right: -100px;
+  top: 78px;
+  z-index: 10;
+  /* 45 deg ccw rotation */
+  -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+  /* shadow */
+  -webkit-box-shadow: 0 0 10px #888;
+     -moz-box-shadow: 0 0 10px #888;
+          box-shadow: 0 0 10px #888;
+}
+.msg-wrap, x:-moz-any-link {/* for firefox */
+  top: 90px;
+}
+.msg-wrap .msg {
+  border: 1px solid #F08F5F;
+  color: #fff;
+  display: block;
+  margin: 1px 0;
+  padding: 10px 50px;
+  text-align: center;
+  text-decoration: none;
+}
+.msg-wrap .msg > span {
+  display: block;
+  font-size: 16px;
+}
+.msg-wrap .msg .msg-content {
+  font-size: 14px;
+}
+
+
 /* メディアクエリー */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
@@ -758,6 +802,20 @@ a, a .content,a .guest-image,a .guest-image:after, a .guest-content,a .guest-con
     text-align: center;
     padding: 20px 0 0;
     margin: 0;
+  }
+  .msg-wrap {
+    position: relative;
+    right: 0;
+    top: 0;
+    /* 45 deg ccw rotation */
+    -webkit-transform: rotate(0deg);
+       -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+         -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+    margin-bottom: 1em;
+    margin-top: 1em;
+    white-space: normal;
   }
 }
 
